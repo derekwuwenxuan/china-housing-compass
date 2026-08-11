@@ -1,0 +1,4 @@
+interface:
+  display_name: "China Housing Compass"
+  short_description: "China housing-market analysis and purchase assessment"
+  default_prompt: "Use $china-housing-compass to analyze this Chinese housing market or assess this home with current, source-graded price, supply, rent, social, parcel-history, environmental, cultural, delivery, and affordability evidence."
