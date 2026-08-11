@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "synthetic-property-2026-01-15",
+  "synthetic": true,
+  "property": {
+    "city": "示例市",
+    "district": "示例区",
+    "submarket": "滨河板块（合成）",
+    "project_name": "澄江雅苑（合成示例）",
+    "developer_brand": "示例开发集团",
+    "project_company": "示例置业有限公司"
+  },
+  "sources": [
+    {
+      "source_id": "synthetic-official-sale",
+      "url": "https://example.test/official/sale",
+      "title": "合成官方销售公示",
+      "grade": "A",
+      "retrieved_on": "2026-01-16",
+      "metadata": {"synthetic": true}
+    },
+    {
+      "source_id": "synthetic-developer-quote",
+      "url": "https://example.test/field/developer-quote",
+      "title": "合成售楼处报价记录",
+      "grade": "C",
+      "retrieved_on": "2026-01-16",
+      "metadata": {"synthetic": true}
+    },
+    {
+      "source_id": "synthetic-field-observation",
+      "url": "https://example.test/field/site-observation",
+      "title": "合成现场观察",
+      "grade": "C",
+      "retrieved_on": "2026-01-16",
+      "metadata": {"synthetic": true}
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_type": "official_unsold_units",
+      "value": 72,
+      "unit": "count",
+      "observed_on": "2026-01-15",
+      "retrieved_on": "2026-01-16",
+      "source_id": "synthetic-official-sale",
+      "grade": "A",
+      "scope": "property",
+      "metadata": {"category": "inventory", "synthetic": true}
+    },
+    {
+      "evidence_type": "developer_quoted_total_price",
+      "value": "1760000",
+      "unit": "RMB",
+      "observed_on": "2026-01-15",
+      "retrieved_on": "2026-01-16",
+      "source_id": "synthetic-developer-quote",
+      "grade": "C",
+      "scope": "unit",
+      "metadata": {"area_sqm": "88", "floor": "middle", "category": "price", "synthetic": true}
+    },
+    {
+      "evidence_type": "model_home_available",
+      "value": false,
+      "unit": "boolean",
+      "observed_on": "2026-01-15",
+      "retrieved_on": "2026-01-16",
+      "source_id": "synthetic-field-observation",
+      "grade": "C",
+      "scope": "property",
+      "metadata": {"category": "product", "synthetic": true}
+    }
+  ]
+}

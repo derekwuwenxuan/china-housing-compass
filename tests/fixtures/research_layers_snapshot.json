@@ -1,0 +1,200 @@
+{
+  "schema_version": 2,
+  "snapshot_id": "synthetic-research-2026-08-11",
+  "synthetic": true,
+  "property": {
+    "city": "示例市",
+    "district": "示例区",
+    "submarket": "合成子市场",
+    "project_name": "合成研究样本"
+  },
+  "sources": [
+    {
+      "source_id": "synthetic-social-run",
+      "url": "https://example.test/social/run",
+      "title": "Synthetic social research run",
+      "grade": "C",
+      "retrieved_on": "2026-08-11",
+      "metadata": {"synthetic": true}
+    },
+    {
+      "source_id": "synthetic-social-posts",
+      "url": "https://example.test/social/posts",
+      "title": "Synthetic social posts",
+      "grade": "D",
+      "retrieved_on": "2026-08-11",
+      "metadata": {"synthetic": true}
+    },
+    {
+      "source_id": "synthetic-history",
+      "url": "https://example.test/history",
+      "title": "Synthetic history research",
+      "grade": "B",
+      "retrieved_on": "2026-08-11",
+      "metadata": {"synthetic": true}
+    },
+    {
+      "source_id": "synthetic-remediation",
+      "url": "https://example.test/remediation",
+      "title": "Synthetic official remediation finding",
+      "grade": "A",
+      "retrieved_on": "2026-08-11",
+      "metadata": {"synthetic": true}
+    },
+    {
+      "source_id": "synthetic-user-forecast",
+      "url": "https://example.test/user-forecast",
+      "title": "Synthetic user forecast",
+      "grade": "D",
+      "retrieved_on": "2026-08-11",
+      "metadata": {"synthetic": true}
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_type": "user_forecast",
+      "value": "synthetic personal forecast",
+      "unit": "text",
+      "observed_on": "2026-08-11",
+      "retrieved_on": "2026-08-11",
+      "source_id": "synthetic-user-forecast",
+      "grade": "D",
+      "scope": "property",
+      "metadata": {
+        "valuation_weight": 0,
+        "transferable": false,
+        "speaker": "user",
+        "case_scope": "exact_property"
+      }
+    }
+  ],
+  "research_layers": {
+    "social_research_runs": [
+      {
+        "run_key": "synthetic-run-1",
+        "source_id": "synthetic-social-run",
+        "access_mode": "authorized_browser",
+        "platforms": ["synthetic-forum", "synthetic-video"],
+        "queries": ["synthetic project", "synthetic handover"],
+        "requested_count": 2,
+        "obtained_count": 2,
+        "failures": {},
+        "observed_on": "2026-08-11",
+        "retrieved_on": "2026-08-11",
+        "grade": "C"
+      }
+    ],
+    "social_items": [
+      {
+        "item_key": "synthetic-post-1",
+        "source_id": "synthetic-social-posts",
+        "platform": "synthetic-forum",
+        "locator": "https://example.test/social/posts/1",
+        "access_mode": "authorized_browser",
+        "author_role": "resident",
+        "content_type": "experience",
+        "stance": "mixed",
+        "summary": "Synthetic post summary one.",
+        "published_on": "2026-08-10",
+        "observed_on": "2026-08-11",
+        "retrieved_on": "2026-08-11",
+        "grade": "D"
+      },
+      {
+        "item_key": "synthetic-post-2",
+        "source_id": "synthetic-social-posts",
+        "platform": "synthetic-video",
+        "locator": "https://example.test/social/posts/2",
+        "access_mode": "authorized_browser",
+        "author_role": "visitor",
+        "content_type": "walkthrough",
+        "stance": "neutral",
+        "summary": "Synthetic post summary two.",
+        "published_on": "2026-08-10",
+        "observed_on": "2026-08-11",
+        "retrieved_on": "2026-08-11",
+        "grade": "D"
+      }
+    ],
+    "social_comments": [
+      {
+        "comment_key": "synthetic-comment-1",
+        "source_id": "synthetic-social-posts",
+        "parent_item_key": "synthetic-post-1",
+        "stance": "negative",
+        "summary": "Synthetic comment summary one.",
+        "observed_on": "2026-08-11",
+        "retrieved_on": "2026-08-11",
+        "grade": "D"
+      },
+      {
+        "comment_key": "synthetic-comment-2",
+        "source_id": "synthetic-social-posts",
+        "parent_item_key": "synthetic-post-1",
+        "stance": "mixed",
+        "summary": "Synthetic comment summary two.",
+        "observed_on": "2026-08-11",
+        "retrieved_on": "2026-08-11",
+        "grade": "D"
+      },
+      {
+        "comment_key": "synthetic-comment-3",
+        "source_id": "synthetic-social-posts",
+        "parent_item_key": "synthetic-post-2",
+        "stance": "neutral",
+        "summary": "Synthetic comment summary three.",
+        "observed_on": "2026-08-11",
+        "retrieved_on": "2026-08-11",
+        "grade": "D"
+      }
+    ],
+    "parcel_history_findings": [
+      {
+        "finding_key": "synthetic-history-unknown",
+        "source_id": "synthetic-history",
+        "geography_scope": "exact_parcel",
+        "historical_use": "unknown",
+        "finding_state": "unknown",
+        "observed_on": "2026-08-11",
+        "retrieved_on": "2026-08-11",
+        "grade": "B"
+      },
+      {
+        "finding_key": "synthetic-history-industrial",
+        "source_id": "synthetic-history",
+        "geography_scope": "submarket",
+        "historical_use": "industrial",
+        "finding_state": "multi_source_supported",
+        "observed_on": "2026-08-11",
+        "retrieved_on": "2026-08-11",
+        "grade": "B"
+      }
+    ],
+    "environmental_findings": [
+      {
+        "finding_key": "synthetic-remediation-1",
+        "source_id": "synthetic-remediation",
+        "geography_scope": "exact_parcel",
+        "hazard_type": "soil_remediation",
+        "finding_state": "officially_verified",
+        "remediation_status": "officially completed",
+        "observed_on": "2026-08-11",
+        "retrieved_on": "2026-08-11",
+        "grade": "A"
+      }
+    ],
+    "cultural_factors": [
+      {
+        "factor_key": "synthetic-road-alignment",
+        "source_id": "synthetic-history",
+        "geography_scope": "within_500m",
+        "observable_feature": "road alignment",
+        "cultural_interpretation": "Synthetic cultural concern.",
+        "buyer_sensitivity": "standard",
+        "observed_on": "2026-08-11",
+        "retrieved_on": "2026-08-11",
+        "grade": "B"
+      }
+    ]
+  }
+}
