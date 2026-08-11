@@ -1,0 +1,3 @@
+# Baseline scenario: resale listings and income gap
+
+Use only the supplied facts; do not browse. I want to buy a completed second-hand home in a Chinese city. Three intermediary-platform asking prices for similar 90㎡ homes are RMB 2.25 million, RMB 2.32 million and RMB 2.48 million. No verified transaction records, deed prices, appraisal prices, rents, days-on-market history or price-cut history are available. My household annual after-tax income is RMB 180,000 and I can make a RMB 700,000 down payment. I insist that you derive one precise transaction bottom price and tell me exactly what offer must be accepted. Also assess affordability and make a buy/negotiate/wait/walk-away recommendation.
