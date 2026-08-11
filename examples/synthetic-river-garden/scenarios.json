@@ -1,0 +1,22 @@
+{
+  "synthetic": true,
+  "as_of": "2026-01-16",
+  "base_input": {
+    "current_comparable_value": "1650000",
+    "years_to_delivery": "2.96",
+    "required_return": "0.05",
+    "purchase_costs": "35000",
+    "financing_costs": "45000",
+    "risk_reserve": "80000"
+  },
+  "factor_sets": {
+    "upside": [["city", "1.02"], ["submarket", "1.03"], ["project", "1.00"], ["product", "1.02"]],
+    "base": [["city", "0.98"], ["submarket", "0.98"], ["project", "0.96"], ["product", "0.98"]],
+    "downside": [["city", "0.94"], ["submarket", "0.92"], ["project", "0.85"], ["product", "0.95"]],
+    "stress": [["city", "0.85"], ["submarket", "0.80"], ["project", "0.75"], ["product", "0.90"]],
+    "delay": [["market", "0.90"], ["delay", "0.95"], ["project", "0.90"]],
+    "quality_dispute": [["market", "0.90"], ["project", "0.85"], ["product", "0.75"]]
+  },
+  "assumption_note": "All entities and values in this fixture are synthetic. Replace every factor with current source-backed evidence before a real purchase decision.",
+  "disclaimer": "Every value is conditional. No scenario is a guaranteed bottom, a certain loss, or an investment promise. A real property could perform outside these rows."
+}

@@ -1,0 +1,262 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "snapshot_id": "synthetic-river-garden-2026-01-16",
+  "property": {
+    "city": "示例市",
+    "district": "示例区",
+    "submarket": "滨河板块（合成）",
+    "project_name": "澄江雅苑（合成示例）",
+    "developer_brand": "示例开发集团",
+    "project_company": "示例置业有限公司",
+    "official_project_id": "SYN-2026-001",
+    "parcel_id": "SYN-PARCEL-001"
+  },
+  "sources": [
+    {
+      "source_id": "synthetic-official-project",
+      "url": "https://example.test/official/project",
+      "title": "[合成] 示例项目公示页",
+      "grade": "A",
+      "retrieved_on": "2026-01-16",
+      "metadata": {"synthetic": true}
+    },
+    {
+      "source_id": "synthetic-official-permit",
+      "url": "https://example.test/official/permit",
+      "title": "[合成] 示例预售方案",
+      "grade": "A",
+      "retrieved_on": "2026-01-16",
+      "metadata": {"synthetic": true}
+    },
+    {
+      "source_id": "synthetic-sales-quote",
+      "url": "https://example.test/observations/sales-quote",
+      "title": "[合成] 售楼处报价观察",
+      "grade": "C",
+      "retrieved_on": "2026-01-16",
+      "metadata": {"synthetic": true}
+    },
+    {
+      "source_id": "synthetic-site-observation",
+      "url": "https://example.test/observations/site",
+      "title": "[合成] 现场观察",
+      "grade": "C",
+      "retrieved_on": "2026-01-16",
+      "metadata": {"synthetic": true}
+    },
+    {
+      "source_id": "synthetic-social-lead",
+      "url": "https://example.test/social/lead",
+      "title": "[合成] 未核实品牌讨论线索",
+      "grade": "D",
+      "retrieved_on": "2026-01-16",
+      "metadata": {"synthetic": true}
+    },
+    {
+      "source_id": "synthetic-land-scenario",
+      "url": "https://example.test/scenarios/land",
+      "title": "[合成] 土地总价假设",
+      "grade": "C",
+      "retrieved_on": "2026-01-16",
+      "metadata": {"synthetic": true}
+    },
+    {
+      "source_id": "synthetic-rent-scenario",
+      "url": "https://example.test/scenarios/rent",
+      "title": "[合成] 租金情景",
+      "grade": "C",
+      "retrieved_on": "2026-01-16",
+      "metadata": {"synthetic": true}
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_type": "official_released_units",
+      "value": 120,
+      "unit": "count",
+      "observed_on": "2026-01-15",
+      "retrieved_on": "2026-01-16",
+      "source_id": "synthetic-official-project",
+      "grade": "A",
+      "scope": "property",
+      "metadata": {"category": "inventory", "price_type": "official_project_inventory", "synthetic": true}
+    },
+    {
+      "evidence_type": "official_unsold_units",
+      "value": 72,
+      "unit": "count",
+      "observed_on": "2026-01-15",
+      "retrieved_on": "2026-01-16",
+      "source_id": "synthetic-official-project",
+      "grade": "A",
+      "scope": "property",
+      "metadata": {"category": "inventory", "synthetic": true}
+    },
+    {
+      "evidence_type": "official_sold_units",
+      "value": 48,
+      "unit": "count",
+      "observed_on": "2026-01-15",
+      "retrieved_on": "2026-01-16",
+      "source_id": "synthetic-official-project",
+      "grade": "A",
+      "scope": "property",
+      "metadata": {"category": "transactions", "synthetic": true}
+    },
+    {
+      "evidence_type": "official_project_company",
+      "value": "示例置业有限公司",
+      "unit": "text",
+      "observed_on": "2026-01-15",
+      "retrieved_on": "2026-01-16",
+      "source_id": "synthetic-official-project",
+      "grade": "A",
+      "scope": "property",
+      "metadata": {"category": "identity", "synthetic": true}
+    },
+    {
+      "evidence_type": "official_land_area_sqm",
+      "value": "24000",
+      "unit": "㎡",
+      "observed_on": "2025-12-01",
+      "retrieved_on": "2026-01-16",
+      "source_id": "synthetic-official-permit",
+      "grade": "A",
+      "scope": "parcel",
+      "metadata": {"category": "land", "semantic_unit": "㎡", "synthetic": true}
+    },
+    {
+      "evidence_type": "official_far",
+      "value": "2.0",
+      "unit": "ratio",
+      "observed_on": "2025-12-01",
+      "retrieved_on": "2026-01-16",
+      "source_id": "synthetic-official-permit",
+      "grade": "A",
+      "scope": "parcel",
+      "metadata": {"category": "land", "synthetic": true}
+    },
+    {
+      "evidence_type": "official_model_home_commitment",
+      "value": true,
+      "unit": "boolean",
+      "observed_on": "2025-12-01",
+      "retrieved_on": "2026-01-16",
+      "source_id": "synthetic-official-permit",
+      "grade": "A",
+      "scope": "property",
+      "metadata": {"category": "product", "description": "[合成] 方案载明设置88㎡展示样板", "synthetic": true}
+    },
+    {
+      "evidence_type": "developer_quoted_total_price",
+      "value": "1760000",
+      "unit": "RMB",
+      "observed_on": "2026-01-15",
+      "retrieved_on": "2026-01-16",
+      "source_id": "synthetic-sales-quote",
+      "grade": "C",
+      "scope": "unit",
+      "metadata": {"category": "price", "price_type": "developer_quote", "area_sqm": "88", "floor": "middle", "not_transaction": true, "synthetic": true}
+    },
+    {
+      "evidence_type": "sales_last_unit_claim",
+      "value": true,
+      "unit": "boolean",
+      "observed_on": "2026-01-15",
+      "retrieved_on": "2026-01-16",
+      "source_id": "synthetic-sales-quote",
+      "grade": "C",
+      "scope": "unit_type",
+      "metadata": {"category": "sales_claim", "wording_summary": "[合成] 销售称88㎡仅余一套", "synthetic": true}
+    },
+    {
+      "evidence_type": "developer_quoted_delivery_date",
+      "value": "2028-12-31",
+      "unit": "date",
+      "observed_on": "2026-01-15",
+      "retrieved_on": "2026-01-16",
+      "source_id": "synthetic-sales-quote",
+      "grade": "C",
+      "scope": "unit",
+      "metadata": {"category": "delivery", "requires_contract_verification": true, "synthetic": true}
+    },
+    {
+      "evidence_type": "model_home_available",
+      "value": false,
+      "unit": "boolean",
+      "observed_on": "2026-01-15",
+      "retrieved_on": "2026-01-16",
+      "source_id": "synthetic-site-observation",
+      "grade": "C",
+      "scope": "property",
+      "metadata": {"category": "product", "synthetic": true}
+    },
+    {
+      "evidence_type": "field_construction_observation",
+      "value": "[合成] 部分楼栋处于早期施工阶段",
+      "unit": "text",
+      "observed_on": "2026-01-15",
+      "retrieved_on": "2026-01-16",
+      "source_id": "synthetic-site-observation",
+      "grade": "C",
+      "scope": "property",
+      "metadata": {"category": "delivery", "not_completion_forecast": true, "synthetic": true}
+    },
+    {
+      "evidence_type": "field_infrastructure_observation",
+      "value": "[合成] 项目近邻未观察到已运营的主要生活配套",
+      "unit": "text",
+      "observed_on": "2026-01-15",
+      "retrieved_on": "2026-01-16",
+      "source_id": "synthetic-site-observation",
+      "grade": "C",
+      "scope": "property",
+      "metadata": {"category": "infrastructure", "status": "field_not_observed", "does_not_prove_absence_in_wider_area": true, "synthetic": true}
+    },
+    {
+      "evidence_type": "parent_brand_forum_complaint",
+      "value": true,
+      "unit": "boolean",
+      "observed_on": "2026-01-15",
+      "retrieved_on": "2026-01-16",
+      "source_id": "synthetic-social-lead",
+      "grade": "D",
+      "scope": "developer_brand",
+      "metadata": {"category": "developer_risk", "not_project_company_fact": true, "synthetic": true}
+    },
+    {
+      "evidence_type": "scenario_land_transaction_total",
+      "value": "480000000",
+      "unit": "RMB",
+      "observed_on": "2026-01-16",
+      "retrieved_on": "2026-01-16",
+      "source_id": "synthetic-land-scenario",
+      "grade": "C",
+      "scope": "parcel",
+      "metadata": {"category": "land", "is_assumption": true, "synthetic": true}
+    },
+    {
+      "evidence_type": "scenario_monthly_rent_low",
+      "value": "3200",
+      "unit": "RMB/month",
+      "observed_on": "2026-01-16",
+      "retrieved_on": "2026-01-16",
+      "source_id": "synthetic-rent-scenario",
+      "grade": "C",
+      "scope": "scenario",
+      "metadata": {"category": "rent", "is_scenario": true, "not_project_rent": true, "basis": "[合成] 低租金情景", "synthetic": true}
+    },
+    {
+      "evidence_type": "scenario_monthly_rent_high",
+      "value": "4000",
+      "unit": "RMB/month",
+      "observed_on": "2026-01-16",
+      "retrieved_on": "2026-01-16",
+      "source_id": "synthetic-rent-scenario",
+      "grade": "C",
+      "scope": "scenario",
+      "metadata": {"category": "rent", "is_scenario": true, "not_project_rent": true, "basis": "[合成] 高租金情景", "synthetic": true}
+    }
+  ]
+}
